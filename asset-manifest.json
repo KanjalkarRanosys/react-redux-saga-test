@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/KanjalkarRanosys/react-redux-saga-test/static/css/main.073c9b0a.css",
+    "main.js": "/KanjalkarRanosys/react-redux-saga-test/static/js/main.20af640b.js",
+    "static/js/787.f662412c.chunk.js": "/KanjalkarRanosys/react-redux-saga-test/static/js/787.f662412c.chunk.js",
+    "index.html": "/KanjalkarRanosys/react-redux-saga-test/index.html",
+    "main.073c9b0a.css.map": "/KanjalkarRanosys/react-redux-saga-test/static/css/main.073c9b0a.css.map",
+    "main.20af640b.js.map": "/KanjalkarRanosys/react-redux-saga-test/static/js/main.20af640b.js.map",
+    "787.f662412c.chunk.js.map": "/KanjalkarRanosys/react-redux-saga-test/static/js/787.f662412c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.20af640b.js"
+  ]
+}
