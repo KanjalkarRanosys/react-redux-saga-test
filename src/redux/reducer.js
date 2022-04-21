@@ -46,6 +46,18 @@ const usersReducer = (state = initialState, action) => {
                 loading: false,
                 error: action.payload
             }
+
+        case types.GQ_CREATE_USER_START:
+            return {
+                ...state
+            }
+
+        case types.GQ_LOAD_USERS_SUCCESS:
+            return {
+                ...state,
+                loading: false,
+            }
+        
         default:
             return state;
     }

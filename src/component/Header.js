@@ -1,7 +1,12 @@
 import React, {useState} from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+
+import { gql, useQuery } from '@apollo/client';
+
 
 const Header = () => {
+
+
   return (
     <div>
         <NavLink to="/">
@@ -10,6 +15,9 @@ const Header = () => {
         <NavLink to="/addUser">
             <button>Add User</button>
         </NavLink>
+        {/* <NavLink to="/gqhome">
+            <button>Add User Using GraphQL</button>
+        </NavLink> */}
     </div>
   )
 }

@@ -56,3 +56,17 @@ export const updateUserError = (error) => ({
     type: types.UPDATE_USER_ERROR,
     payload: error
 })
+
+export const gqloadUsersStart = () =>({
+    type:types.GQ_CREATE_USER_START
+})
+
+export const gqloadUsersSuccess = (users) => ({
+    type: types.GQ_LOAD_USERS_SUCCESS,
+    payload: users
+})
+
+export const gqloadUsersError = (error) => ({
+    type: types.GQ_LOAD_USERS_ERROR,
+    payload: error
+})
