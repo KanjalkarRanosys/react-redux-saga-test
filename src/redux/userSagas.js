@@ -3,7 +3,7 @@ import * as types from "./actionTypes"
 import { take, takeEvery, takeLatest, put, all, delay, fork, call } from "redux-saga/effects"
 import { createUserApi, deleteUserApi, loadUsersApi, updateUserApi } from "./api";
 import { createUserError, createUserSuccess, deleteUserError, deleteUserSuccess, gqloadUsersSuccess, loadUsersError, loadUsersSuccess, updateUserError, updateUserSuccess } from "./actions";
-import useUsers from "../hooks/useUsers";
+// import useUsers from "../hooks/useUsers";
 
 function* onLoadUsersStartAsync(){
     try {

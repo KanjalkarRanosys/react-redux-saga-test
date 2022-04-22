@@ -1,10 +1,12 @@
 import { useMutation } from '@apollo/client'
+import { gql } from 'apollo-server-express'
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {useNavigate, useParams} from "react-router-dom"
 import { CREATE_USER } from '../hooks/useCreateUser'
+// import { CREATE_USER } from '../hooks/useCreateUser'
 import { createUserStart, updateUserStart } from '../redux/actions'
 
 
@@ -14,6 +16,8 @@ const GqAddEditUser = () => {
         title:"",
         body:""
     })
+
+    const [addTodo, { data, loading, error }] = useMutation(CREATE_USER);
     
     // const [formValue, setFormValue] = useState(initialState)
     // const {name, email, phone, username} = formValue;
@@ -24,13 +28,12 @@ const GqAddEditUser = () => {
         setFormValues({
             ...formValues, [e.target.name]: e.target.value
         })
-        createPost({
+        addTodo({
             variables: formValues
         })
-        console.log(formValues);
     }
 
-    const [createPost, {data}] = useMutation(CREATE_USER)
+    // const [createPost, {data, loading, error}] = useMutation(CREATE_USER)
 
     // const mutation = useMutation()
 

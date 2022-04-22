@@ -1,12 +1,12 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
-import Home from './pages/Home';
-import AddEditUser from './pages/AddEditUser';
-import UserView from './pages/UserView';
-import Header from './component/Header';
-import GQHome from './pages/GQHome';
-import GQUserView from './pages/GQUserView';
-import GqAddEditUser from './pages/gqAddEditUser';
+import Home from './pages/Home.js';
+import AddEditUser from './pages/AddEditUser.js';
+import UserView from './pages/UserView.js';
+import Header from './component/Header.js';
+import GQHome from './pages/GQHome.js';
+import GQUserView from './pages/GQUserView.js';
+import GqAddEditUser from './pages/gqAddEditUser.js';
 
 function App() {
   return (

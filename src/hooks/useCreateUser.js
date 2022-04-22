@@ -3,23 +3,20 @@ import { gql, useQuery, useMutation } from '@apollo/client';
 
 
 export const CREATE_USER = gql`
-mutation (
-    $input: CreatePostInput!
-  ) {
-    createPost(input: $input) {
+mutation AddTodo($text: String!) {
+    addTodo(text: $text) {
       id
-      title
-      body
+      text
     }
   }
 `;
 
-const useCreateUser = () => {
+// const useCreateUser = () => {
     
-    const {data} = useQuery(CREATE_USER);
-    console.log("data", data);
+//     const {data} = useMutation(CREATE_USER);
+//     console.log("data", data);
 
-  return data
-}
+//   return data
+// }
 
-export default useCreateUser
+// export default useCreateUser

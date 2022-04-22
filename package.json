@@ -2,16 +2,19 @@
   "name": "crud-redux-saga",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@apollo/client": "^3.5.10",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "apollo-client": "^2.6.10",
     "apollo-server": "^3.5.0",
     "apollo-server-core": "^3.5.0",
     "axios": "^0.26.1",
     "graphql": "^15.7.2",
     "mdb-react-ui-kit": "^3.0.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-redux": "^8.0.0",
@@ -48,8 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }
