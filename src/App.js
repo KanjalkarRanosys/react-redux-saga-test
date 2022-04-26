@@ -6,7 +6,8 @@ import UserView from './pages/UserView.js';
 import Header from './component/Header.js';
 import GQHome from './pages/GQHome.js';
 import GQUserView from './pages/GQUserView.js';
-import GqAddEditUser from './pages/gqAddEditUser.js';
+import GqAddTodo from './pages/gqAddEditUser.js';
+import GqEditPost from './pages/gqEditPost';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
             <Route path="/userView/:id" element={<UserView />} />
             <Route exact path="/gq-home" element={<GQHome />} />
             <Route path="/gquserView/:id" element={<GQUserView />} />
-            <Route path="/gqAddUser" element={<GqAddEditUser />} />
+            <Route path="/gqAddUser" element={<GqAddTodo />} />
+            {/* <Route path="/gqEditUser/:id" element={<GqAddTodo />} /> */}
+            <Route path="/gqEditUser/:id" element={<GqEditPost />} />
           </Routes>
       </div>
     </BrowserRouter>

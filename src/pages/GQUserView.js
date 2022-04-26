@@ -9,16 +9,16 @@ const GQUserView = () => {
   console.log(data);
   const {id} = useParams();
   const navigate = useNavigate()
-  const singleUser = data.users.data.find((item)=> item.id == Number(id))
+  const singleUser = data.posts.data.find((item)=> item.id == Number(id))
 
   return (
     <div>
       <h4>GQUserView</h4>
       <p>Id: {singleUser.id}</p>
-      <p>Name: {singleUser.name}</p>
-      <p>Email: {singleUser.email}</p>
+      <p>Name: {singleUser.title}</p>
+      {/* <p>Email: {singleUser.email}</p>
       <p>Phone: {singleUser.phone}</p>
-      <p>Address: {singleUser.address}</p><br/><br/><br/>
+      <p>Address: {singleUser.address}</p><br/><br/><br/> */}
       <button onClick={()=> navigate("/gq-home")} >Go Back</button>
     </div>
   )

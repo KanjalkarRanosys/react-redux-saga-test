@@ -93,8 +93,12 @@ function* onUpdateUser() {
 //     yield takeEvery(types.GQ_CREATE_USER_START, gqOnLoadUsersStartAsync);
 // }
 
+function* onSinglePost() {
+    yield takeEvery(types.SELECT_SINGLE_USER,)
+}
 
-const userSagas = [fork(onLoadUsers), fork(onCreateUser), fork(onDeleteUser), fork(onUpdateUser) ]
+
+const userSagas = [fork(onLoadUsers), fork(onCreateUser), fork(onDeleteUser), fork(onUpdateUser), fork(onSinglePost) ]
 
 export default function* rootSaga() {
     yield all([...userSagas])

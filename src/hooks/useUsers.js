@@ -3,17 +3,19 @@ import { gql, useQuery } from '@apollo/client';
 
 
 const GET_USERS = gql`
-query {
-    users {
-      data {
-        id
-        name
-        username
-        email
-        phone
-      }
+query (
+  $options: PageQueryOptions
+) {
+  posts(options: $options) {
+    data {
+      id
+      title
     }
-  }      
+    meta {
+      totalCount
+    }
+  }
+}   
 `
 
 const useUsers = () => {

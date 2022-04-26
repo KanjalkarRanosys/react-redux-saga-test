@@ -70,3 +70,27 @@ export const gqloadUsersError = (error) => ({
     type: types.GQ_LOAD_USERS_ERROR,
     payload: error
 })
+
+export const gqcreateUserStart = (post) => ({
+    type: types.GQ_UPDATE_USER_START,
+    payload: post
+})
+
+export const gqcreateUserSuccess = () => ({
+    type: types.GQ_UPDATE_USER_SUCCESS
+})
+
+export const gqcreateUserError = (error) => ({
+    type: types.GQ_UPDATE_USER_ERROR,
+    payload: error
+})
+
+export const singlePost = (item) => ({
+    type: types.SELECT_SINGLE_USER,
+    payload: item
+})
+
+export const getPostsData = () => ({
+    type: types.GET_POST_DATA,
+    // payload: item
+})
